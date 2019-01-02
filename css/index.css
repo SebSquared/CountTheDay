@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Thasadith|Sedgwick+Ave');
+
 body
 {
   margin: 0;
@@ -14,4 +16,46 @@ body
   background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   opacity: .90;
+}
+.Container
+{
+  position: absolute;
+  height: 20vw;
+  width: auto;
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+}
+h1
+{
+  font-family: Sedgwick Ave;
+  font-size: 7vw;
+  color: #F9F9F9;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15), 2px 2px 2px rgba(249,249,249,0);
+}
+h2
+{
+  font-family: Montserrat;
+  font-size: 2vw;
+  color: #F9F9F9;
+}
+button
+{
+  margin-top: 2vw;
+  height: 2vw;
+  width: 10vw;
+  color: #303030;
+  font-size: 0.7vw;
+  font-family: Montserrat;
+  background-color: #F9F9F9;
+  border: transparent solid 0px;
+  border-radius: 2vw 2vw 2vw 2vw;
+  -moz-border-radius: 2vw 2vw 2vw 2vw;
+  -webkit-border-radius: 2vw 2vw 2vw 2vw;
+  cursor: pointer;
+  outline: 0;
 }
