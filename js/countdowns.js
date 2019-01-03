@@ -93,3 +93,26 @@ function Countdown_ArmisticeDay() {
     }
   }, 1000);
 }
+// Ash Wednesday
+function Countdown_AshWednesday() {
+  var countDownDate = new Date("Mar 6, 2019 00:00:00").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("DAYS_ASHWEDNESDAY").innerHTML = days + "";
+    document.getElementById("HOURS_ASHWEDNESDAY").innerHTML = hours + "";
+    document.getElementById("MINUTES_ASHWEDNESDAY").innerHTML = minutes + "";
+    document.getElementById("SECONDS_ASHWEDNESDAY").innerHTML = seconds + "";
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("DAYS_ASHWEDNESDAY").innerHTML = "X";
+      document.getElementById("HOURS_ASHWEDNESDAY").innerHTML = "X";
+      document.getElementById("MINUTES_ASHWEDNESDAY").innerHTML = "X";
+      document.getElementById("SECONDS_ASHWEDNESDAY").innerHTML = "X";
+    }
+  }, 1000);
+}
