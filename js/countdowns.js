@@ -70,3 +70,26 @@ function Countdown_AprilFoolsDay() {
     }
   }, 1000);
 }
+// Armistice Day
+function Countdown_ArmisticeDay() {
+  var countDownDate = new Date("Nov 11, 2019 00:00:00").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("DAYS_ARMISTICEDAY").innerHTML = days + "";
+    document.getElementById("HOURS_ARMISTICEDAY").innerHTML = hours + "";
+    document.getElementById("MINUTES_ARMISTICEDAY").innerHTML = minutes + "";
+    document.getElementById("SECONDS_ARMISTICEDAY").innerHTML = seconds + "";
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("DAYS_ARMISTICEDAY").innerHTML = "X";
+      document.getElementById("HOURS_ARMISTICEDAY").innerHTML = "X";
+      document.getElementById("MINUTES_ARMISTICEDAY").innerHTML = "X";
+      document.getElementById("SECONDS_ARMISTICEDAY").innerHTML = "X";
+    }
+  }, 1000);
+}
